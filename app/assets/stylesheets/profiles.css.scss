@@ -1,0 +1,48 @@
+// Place all the styles related to the Profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.profile-view {
+
+  .none-attribute-given {
+    color: #ccc;
+  }
+
+  .leftside {    
+  
+    text-align: right;
+  
+    ul {
+      font-weight: bold;
+    }
+    
+  }
+  
+  .rightside {
+    
+    padding-left: 10px;
+    
+    ul {
+      margin-top: 8px;
+    }
+    
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+  }
+  
+  img {
+    text-align: right;
+  }
+  
+  h1 {
+    line-height: 130px;
+    margin: 0;
+    font-size: 2em;
+  }
+  
+}

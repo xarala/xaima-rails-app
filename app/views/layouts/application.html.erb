@@ -1,14 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
+  <!--[if lt IE 7]> <html class='no-js ie6 oldie' lang='en'> <![endif]-->
+  <!--[if IE 7]>    <html class='no-js ie7 oldie' lang='en'> <![endif]-->
+  <!--[if IE 8]>    <html class='no-js ie8 oldie' lang='en'> <![endif]-->
+  <!--[if gt IE 8]> <html class='no-js' lang='en'> <![endif]-->
 <html>
-<head>
-  <title>Xaima</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+  <head>
+	  <meta charset='utf-8'>
+	  <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 
-</body>
+	  <title></title>
+	  <meta name='description' content=''>
+	  <meta name='author' content=''>
+
+	  <meta name='viewport' content='width=device-width,initial-scale=1'>
+	
+    <%= stylesheet_link_tag    'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %> 
+    
+    <title>xaima.org - xaima xam xam</title>
+
+  </head>
+  
+  <body>
+  
+  <div id='header-container'>
+	  <header class='wrapper clearfix'>
+		  <h1 id='title'>h1#title</h1>
+		  <nav>
+			  <ul>
+				  <li><a href='#'>nav ul li a</a></li>
+				  <li><a href='#'>nav ul li a</a></li>
+				  <li><a href='#'>nav ul li a</a></li>
+			  </ul>
+		  </nav>
+	  </header>
+  </div>
+  
+  <div class='main-container'>
+    <section class='wrapper clearfix' id="main">
+      <%= yield %>
+    </section>  
+  </div>
+
+	<div id="footer-container">
+		<footer class="wrapper">
+			<h3>footer</h3>
+		</footer>
+	</div>  
+
+  </body>
+  
 </html>

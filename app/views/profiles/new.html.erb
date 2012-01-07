@@ -1,0 +1,7 @@
+<h1><%= t ".title" %></h1>
+<%= semantic_form_for @profile do |p| %>
+  <%= p.input :email  %>
+  <%= p.input :password  %>
+  <%= p.input :password_confirmation  %>
+  <%= p.buttons %>
+<% end %>
